@@ -10,14 +10,14 @@
       // Logging function
       const consoleEl = document.querySelector("#workerConsole");
       const log = (msg) => {
-        const ts = new Date().toLocaleTimeString(); // e.g. "6:42:11 PM"
+        const ts = new Date().toLocaleTimeString();
         consoleEl.value += `[${ts}] ${msg}\n\n`;
         consoleEl.scrollTop = consoleEl.scrollHeight;
       };
 
       if (!worker) {
         //
-        // Set identity for this worker
+        // Set DCP identity for this worker
         //
          const id = await new dcp.wallet.Keystore(
            "0x5356d59ec41a45672e4be75a8761e1721f7b48941226f2775722907238f805be","" // web-worker-demo-id
@@ -281,7 +281,6 @@
     #workerConsole {
       flex: 1;
       width: 100%;
-   /* max-height: 26em;     // ≈ 20 rows */
       resize: none;
       box-sizing: border-box;
     }
