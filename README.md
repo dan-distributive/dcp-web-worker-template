@@ -1,6 +1,6 @@
-# DCP Web Worker Template
+# DistributiveWorker Template
 
-A **vanilla implementation of a DCP Web Worker** with full event logging and configuration options. This template provides a starting point for anyone wanting to build a web-based DCP worker with real-time console output and complete sandbox monitoring.
+A **vanilla implementation of a DCP Browser Worker** with full event logging and configuration options. This template provides a starting point for anyone wanting to integrate a DCP worker into any webpage with real-time console output and complete sandbox monitoring.
 
 ## Try it
 Live interactive JSFiddle: [https://jsfiddle.net/DCP_team/g29or41j/](https://jsfiddle.net/DCP_team/g29or41j/)
